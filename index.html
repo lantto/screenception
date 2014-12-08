@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Screenception</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="logo">
+    <h3>Screenception</h3>
+    <h2>Screenception</h2>
+    <h1>Screenception</h1>
+</div>
+
+<div id="start" style="display: none">
+    <p>Find the <span style="color: #f8571c">odd</span> <span style="color: #f1c61c">part</span><span style="color: #106ea6">icle</span> and keep it visible.</p>
+    <p>It can jump between levels and if hidden your score will drop.</p>
+    <p>Zero means game over.</p>
+    <br>
+    <p>Controls: mouse</p>
+    <h2>Select challenge</h2>
+    <div style="margin-bottom: 20px"><a href="#1" onclick="location.href = '#1'; window.location.reload();"><img src="challenge1.png"></a> <a href="#2" onclick="location.href = '#2'; window.location.reload();"><img src="challenge2.png"></a> <a href="#3" onclick="location.href = '#3'; window.location.reload();"><img src="challenge3.png"></a></div>
+    <p style="font-size: 12px">Created by Erik Lantto for <a href="http://www.ludumdare.com/compo/"><span style="color: #FE833A">Ludum</span> <span style="color: #FEC634">Dare</span> <span style="color: #CBCBED">31</span></a> (theme: "Entire Game on One Screen").</p>
+</div>
+
+<div id="game-wrapper" style="display: none">
+    <canvas id="game" width="960" height="540"></canvas>
+
+    <canvas id="offscreen" width="960" height="540" style="display: none;"></canvas>
+
+    <div style="text-align: center">
+        <h1 id="health"></h1>
+        <h2>Goal: <span id="jumps"></span>/<span id="goal"></span></h2>
+    </div>
+</div>
+
+<div id="game-over" style="display: none">
+    <h1>Game Over</h1>
+    <p style="margin-bottom: 20px"><a onclick="window.location.reload();">Try again &gt;&gt;</a></p>
+    <p><a href="http://localhost/inception/">&lt;&lt; Back</a></p>
+</div>
+
+<div id="success" style="display: none">
+    <h1>You finished it. Good job!</h1>
+    <p><a href="http://localhost/inception/">&lt;&lt; Back</a></p>
+</div>
+
+<script src="js/veld.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    background-color: black; 
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    position: relative;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo, #game-over, #success {
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    height: 75px;
+    padding: 50px 0 0 0;
+}
+
+.logo h1, .logo h2, .logo h3 {
+    line-height: 0;
+}
+
+.logo h1 {
+    position: relative;
+    top: 30px;
+}
+
+.logo h2 {
+    color: #606060;
+    position: relative;
+    top: 15px;
+}
+
+.logo h3 {
+    color: #2f2f2f;
+    position: relative;
+}
+
+#health {
+    margin-bottom: 10px;
+}
+
+#game {
+    cursor: none;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+#game-over, #success {
+    padding: 20px 0 0 0;
+}
+
+#game-over h1, #success h1 {
+    margin: 0 0 20px 0;
+}
+
+#game-over {
+    color: #FA0000;
+}
+
+#success, #jumps {
+    color: #0DD200;
+}
+
+#start {
+    text-align: center;
+}
+
+#start h2 {
+    margin: 20px 0;
+}
